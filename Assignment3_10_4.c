@@ -22,3 +22,4 @@ long long convert(int num)
   }
   return bin;
 }
+
