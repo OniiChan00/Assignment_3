@@ -1,25 +1,16 @@
 #include <stdio.h>
-long long convert(int num);
-
-
 int main(void) {
-  int a;
-  scanf("%d",&a);
-  printf("%lld",convert(a));
-  return 0;
-}
-
-long long convert(int num)
-{
-  int r,i = 1;
+  int a,r,i = 1;
   long long bin = 0;
-  while(num != 0)
+  scanf("%d",&a);
+  while(a != 0)
   {
-    r = num % 2;
-    num /= 2;
+    r = a % 2;
+    a /= 2;
     bin += r * i;
     i *= 10;
-  }
-  return bin;
+  } 
+  printf("%lld",bin);
+  return 0;
 }
 
