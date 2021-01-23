@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main(void) {
+int main(void)
+{
   int a,r,i = 1;
   long long bin = 0;
   scanf("%d",&a);
